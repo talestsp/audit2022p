@@ -1,0 +1,31 @@
+# siglas de estados + ZZ (urnas fora do Brasil)
+SIGLAS_ESTADOS_TSE = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO', "ZZ"]
+CAPITAIS = {"MA": "SAO LUIS", "PI": "TERESINA", "CE": "FORTALEZA", "RN": "NATAL",
+            "PB": "JOAO PESSOA", "PE": "RECIFE", "AL": "MACEIO", "SE": "ARACAJU", "BA": "SALVADOR",
+            "MG": "BELO HORIZONTE", "ES": "VITORIA", "SP": "SAO PAULO", "RJ": "RIO DE JANEIRO",
+            "PR": "CURITIBA", "SC": "FLORIANOPOLIS", "RS": "PORTO ALEGRE",
+            "MT": "CUIABA", "MS": "CAMPO GRANDE", "GO": "GOIANIA", "DF": "BRASILIA", "TO": "PALMAS",
+            "AM": "MANAUS", "RR": "BOA VISTA", "AP": "MACAPA", "RO": "PORTO VELHO",
+            "AC": "RIO BRANCO", "PA": "BELEM"}
+
+DIR_DATA = "data/"
+
+DIR_DATA_RAW = DIR_DATA + "raw/"
+DIR_DATA_RAW_TSE = DIR_DATA_RAW + "tse/"
+DIR_DATA_RAW_IBGE = DIR_DATA_RAW + "ibge/"
+
+FILEPATH_RAW_TSE_MODELOS_URNA_ZIP = DIR_DATA_RAW_TSE + "modelourna_numerointerno.zip"
+FILEPATH_RAW_TSE_VOTACAO = DIR_DATA_RAW_TSE + "votacao_secao_2022_BR.zip"
+FILEPATH_RAW_TSE_PATTERN_BOLETINS_DE_URNA_2T = DIR_DATA_RAW_TSE + "bweb_2t_{SIGLA}_311020221535.zip"
+FILEPATH_RAW_IBGE_PIB = DIR_DATA_RAW_IBGE + "PIBMunicipal_2010_2013.xls"
+FILEPATH_RAW_IBGE_SHAPEFILE_ZIP = DIR_DATA_RAW_IBGE + "BR_Municipios_2021.zip"
+
+
+DIR_DATA_PROCESSED = DIR_DATA + "processed/"
+
+FILEPATH_PROC_ESTADOS = DIR_DATA_PROCESSED + "estados.csv"
+FILEPATH_PROC_IBGE_PIB = DIR_DATA_PROCESSED + "ibge_pib.csv"
+FILEPATH_PROC_IBGE_SHAPEFILE = DIR_DATA_PROCESSED + "BR_Municipios_2021.shp"
+FILEPATH_PROC_TSE_BOLETINS_DE_URNA_2T = DIR_DATA_PROCESSED + "bu_presidente_2t.csv"
+
+
