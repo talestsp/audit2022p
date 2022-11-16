@@ -5,7 +5,7 @@ Repositório para análises das Eleições 2022 para presidente, segundo turno.
 Execute os notebooks 0, 1.1 e 1.2 para baixar e preparar os dados. <br>
 Em seguida, qualquer um dos notebooks 2.* poderão ser executados. <br>
 
-0 - BaixarDados.ipynb <br>
+[0 - BaixarDados.ipynb](notebooks/0 - BaixarDados.ipynb) <br>
 1.1 - PreProcessamentoDeDadosIBGE.ipynb <br> 
 1.2 - PreProcessamentoDeDadosBoletimDeUrna.ipynb <br>
 2.1 - AnáliseModeloDeUrnaVotação.ipynb <br>
