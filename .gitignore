@@ -1,7 +1,7 @@
 data/processed/*
 data/raw/tse/*
 data/raw/ibge/BR_Municipios_2021.zip
-data/raw/ibge/BR_Municipios_2021.csv
+data/raw/ibge/BR_Municipios_2021.xls
 
 *.pyc
 *.ipynb_checkpoints
