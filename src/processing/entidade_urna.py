@@ -27,19 +27,22 @@ COLOR_MODELO_URNA = {"2020": "#f3aa20", "2015": "#0162a7", "2013": "#0162a7",
                      "2011": "#0162a7", "2010": "#0162a7", "2009": "#0162a7"}
 
 
-
 def in_faixa(num, faixas):
     for faixa in faixas:
         if num > faixa[0] and num <= faixa[1]:
             return faixa
-    return None
-
+    if num == 0.5:
+        return "neutro"
+    else:
+        return None
 
 def cor_gradiente(row):
     if row["modelo_urna_binario"] == "modelo 2020":
         faixa = in_faixa(row["Relativo"], COLOR_GRADIENT_URNA_MODELO_2020.keys())
         if faixa == None:
             cor = None
+        elif faixa == "neutro":
+            cor = "white"
         else:
             cor = COLOR_GRADIENT_URNA_MODELO_2020[faixa]
 
@@ -48,6 +51,8 @@ def cor_gradiente(row):
 
         if faixa == None:
             cor = None
+        elif faixa == "neutro":
+            cor = "white"
         else:
             cor = COLOR_GRADIENT_URNA_OUTROS_MODELOS[faixa]
 
