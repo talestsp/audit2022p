@@ -7,6 +7,7 @@ data/raw/ibge/BR_Municipios_2021.csv
 *.ipynb_checkpoints
 
 .idea/
+.DS_Store
 
 
 
